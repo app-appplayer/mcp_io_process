@@ -1,0 +1,8 @@
+# Dart/Flutter build + tool artifacts
+.dart_tool/
+build/
+.packages
+pubspec.lock
+
+# Local-dev dependency overrides (not published)
+pubspec_overrides.yaml

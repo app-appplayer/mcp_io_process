@@ -1,0 +1,26 @@
+name: mcp_io_process
+description: Policy-gated, sandboxed OS process / shell execution adapter for mcp_io. argv-only by default, deny-by-default allowlists, plan-commit for dangerous actions.
+version: 0.1.0
+homepage: https://app-appplayer.github.io/makemind
+repository: https://github.com/app-appplayer/mcp_io_process
+issue_tracker: https://github.com/app-appplayer/mcp_io_process/issues
+
+topics:
+  - io
+  - mcp
+  - process
+  - shell
+  - adapter
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  mcp_io: ^0.2.1
+  mcp_bundle: ^0.4.0
+  meta: ^1.15.0
+  path: ^1.9.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.24.0
