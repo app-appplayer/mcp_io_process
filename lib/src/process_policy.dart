@@ -2,11 +2,10 @@
 library;
 
 // PolicyRule / PolicyCondition / PolicyConstraints / RateLimit live in the
-// io_policy_port port file. The mcp_bundle barrel exports a different
-// PolicyRule (models/policy.dart), so they are imported directly here — the
-// same pattern mcp_io's own PolicyEngine uses.
-// ignore: implementation_imports
-import 'package:mcp_bundle/src/ports/io_policy_port.dart'
+// io_policy_port contract. The mcp_bundle main barrel exports a different
+// PolicyRule (models/policy.dart), so they are taken from the public ports
+// catalogue with an explicit `show`.
+import 'package:mcp_bundle/ports.dart'
     show PolicyRule, PolicyCondition, PolicyConstraints, RateLimit;
 
 /// Builder for the recommended deny-by-default policy posture.

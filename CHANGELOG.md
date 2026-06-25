@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 - 2026-06-25
+
+- Import hygiene: `process_policy.dart` imports the io policy contract via the
+  public `package:mcp_bundle/ports.dart` (with an explicit `show`) instead of
+  reaching into `package:mcp_bundle/src/...`. No API or behaviour change.
+
 ## 0.1.0
 
 - Initial release. `ProcessAdapter` — a policy-gated, sandboxed OS process /
